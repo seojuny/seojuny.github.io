@@ -1,0 +1,70 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -200px;
+    width: 80px;
+    height: 100vh;
+    background-color: #f2f2f2;
+    padding: 0px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.sidebar.open {
+    transform: translateX(200px);
+}
+
+.showButton {
+    position: absolute;
+    top: 20px;
+    right: -178.5px;
+    width: 40px;
+    height: 35px;
+    padding: none;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.sidebar.open .showButton {
+    transform: translateX(-200px);  
+}
+
+.sideContainer {
+    position: absolute;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    top: 85px;
+    left: 10px;
+    
+}
+
+.sideButton {
+    width: 60px;
+    height: 40px;
+    background: none;
+    border-width: 3px;
+    padding: none;
+    text-align: center;
+}
+
+.hamburger {
+    margin-left: -5px;
+    display: inline-block;
+    cursor: pointer;
+    padding: 0px;
+}
+
+.hamburger span {
+    display: block;
+    width: 40px;
+    height: 7px;
+    margin-bottom: 7px;
+    background-color: #333;
+}
+
+.hamburger span:last-child {
+    margin-bottom: 0;
+}
